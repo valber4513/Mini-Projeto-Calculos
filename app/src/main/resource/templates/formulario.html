@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Aluno</title>
+</head>
+<body>
+    <h2>Formulário de Aluno</h2>
+    <form action="#" th:action="@{/formulario}" th:object="${aluno}" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" th:field="*{nome}" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" th:field="*{idade}" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="text" id="dataNascimento" th:field="*{dataNascimento}" required>
+
+        <label for="numeroCpf">CPF:</label>
+        <input type="text" id="numeroCpf" th:field="*{numeroCpf}" required>
+
+        <label for="registroGeral">Registro Geral:</label>
+        <input type="text" id="registroGeral" th:field="*{registroGeral}" required>
+
+        <label for="login">Login:</label>
+        <input type="text" id="login" th:field="*{login}" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" th:field="*{senha}" required>
+
+        <label for="disciplinas">Disciplinas:</label>
+        <select id="disciplinas" multiple="multiple" th:field="*{disciplina}">
+            <option th:each="disciplina : ${listaDisciplinas}" th:value="${disciplina}" th:text="${disciplina}"></option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
