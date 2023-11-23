@@ -1,4 +1,4 @@
-package controller;
+package sistema.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +15,7 @@ public class AlunoController {
 
     private final List<Aluno> listaAlunos = new ArrayList<>();
 
-    @GetMapping("/formulario")
+    @GetMapping({"/", "/formulario"})
     public String mostrarFormulario(Aluno aluno, Model model) {
         List<String> listaDisciplinas = Arrays.asList("Matemática", "Português", "História", "Geografia", "Ciências");
         model.addAttribute("listaDisciplinas", listaDisciplinas);
