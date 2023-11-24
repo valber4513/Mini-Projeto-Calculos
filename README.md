@@ -1,18 +1,30 @@
-# Mini Sistema de Cálculos de Notas
+# Projeto de Gerenciamento de Notas de Alunos
 
-Este é um pequeno sistema em Java para calcular notas de alunos em disciplinas. Os usuários fornecem login, senha e detalhes pessoais, em seguida, inserem notas para várias disciplinas. O sistema calcula a média das notas e determina a condição final do aluno (aprovado, reprovado ou em recuperação).
+Este é um projeto simples de gerenciamento de alunos e disciplinas utilizando React no frontend e Node.js no backend. Ele permite cadastrar alunos, disciplinas, lançar notas e listar o status dos alunos em relação às disciplinas.
 
-## Como Executar
+## Requisitos
 
-1. Execute o arquivo `execucao.java`.
-2. Insira o login e senha quando solicitado (Padrão: admin/admin).
-3. Forneça detalhes pessoais e notas para as disciplinas.
-4. O sistema exibirá uma ficha cadastral completa, incluindo a média das notas e a condição final.
+- Node.js (<https://nodejs.org/>)
+- npm (gerenciador de pacotes do Node.js, já vem com a instalação do Node.js)
 
-### Arquivos
+## Configuração e Instalação
 
-- `aluno.java`: Classe que representa um aluno com detalhes pessoais, notas e métodos para calcular média e condição final.
-- `Disciplinas.java`: Classe para representar disciplinas com nome e nota.
-- `execucao.java`: Executa o sistema, recebe dados do usuário e exibe a ficha cadastral.
-- `materias.java`: Classe para representar matérias.
+1. **Clone o repositório:**
 
+   ```bash
+   git clone https://github.com/valber4513/Mini-Projeto-Calculos.git
+2. **Navegue até o diretório>**
+   ```bash
+   cd Mini-Projeto-Calculos
+3. **Instale os pacotes Node:**
+   ```bash
+   cd npm install
+## Executar o Projeto
+   ```bash
+   cd Mini-Projeto-Calculos
+   ````
+   ```bash
+   npm start
+   ```
+
+- A pagina http://localhost:3000/ abrirá no navegador com a aplicação em execução.

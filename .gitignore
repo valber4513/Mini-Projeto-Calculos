@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Testes
+coverage
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de build
+build/
+dist/
+
+# Arquivos de configuração
+.env
+
+# Dependências específicas do desenvolvedor
+devDependencies/
+
+# Outros
+.DS_Store
+Thumbs.db
