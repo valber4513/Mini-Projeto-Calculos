@@ -207,8 +207,35 @@ const App = () => {
 
       <div className="tab-content mt-2">
         <div className={`tab-pane fade show ${activeTab === 'home' ? 'active' : ''}`} id="home">
-          <h1>Bem-vindo à Home</h1>
+          <h2>Bem-vindo ao APP de Controle de Notas Escolares</h2>
+          <p>Para começar, siga estes passos simples:</p>
+
+          <h3>Passo 1: Cadastre um Aluno</h3>
+          <p>Clique na aba "Cadastrar Aluno" e preencha os campos.</p>
+
+          <h3>Passo 2: Cadastre uma Matéria</h3>
+          <p>Vá até a aba "Cadastrar Disciplina" e preencha os campos.</p>
+
+          <h3>Passo 3: Lance a Nota</h3>
+          <p>Na aba "Lançar Nota", selecione o aluno, a disciplina e informe a nota.</p>
+
+          <h3>Explorando outras funcionalidades:</h3>
+          <ul>
+            <li>Para listar os alunos, clique em "Listar Alunos".</li>
+            <li>Para listar as disciplinas, vá até "Listar Disciplinas".</li>
+            <li>Para visualizar o status, escolha "Listar Status".</li>
+          </ul>
+
+          <h3>Entendendo os Status:</h3>
+          <p>Na aba "Listar Status", você verá o resultado de acordo com a nota lançada:</p>
+          <ul>
+            <li>Nota menor que 3 = Reprovado</li>
+            <li>Nota entre 3 e 6 = Recuperação</li>
+            <li>Nota maior que 6 = Aprovado</li>
+          </ul>
         </div>
+
+
 
         <div className={`tab-pane fade ${activeTab === 'cadastrarAluno' ? 'show active' : ''}`} id="cadastrarAluno">
           <h1>Cadastrar Aluno</h1>
